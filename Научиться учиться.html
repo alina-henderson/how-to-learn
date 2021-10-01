@@ -10,12 +10,12 @@
 <body>
   <div class="page">
     <header class="header">
-      <img src="./images/logo_place_header.svg" alt="Логотип Яндекс Практикума" class="logo logo_place_header">
+      <img src="./images/logo_place_header.svg" alt="Logo Yandex Praktikum" class="logo logo_place_header">
       <h1 class="header header__title">Научиться учиться</h1>
       <h4 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a href="#" class="header__subtitle_link"> Узнать &rarr;</a></h4>
-      <img src="./images/header-image.png" alt="Главное изображение" class="header header__main-illustration">
-      <div class="header__square-pic square"></div>
+      <img src="./images/header-image.png" alt="Main Illustration" class="header header__main-illustration">
+      <div class=" header__square-pic square"></div>
     </header>
 
     <main class="content">
@@ -81,10 +81,10 @@
       </section>
 
       <section class="feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <h1 class="feynman__title">Метод Фейнмана</h1>
         <h3 class="feynman__subtitle">Выучить и не забыть</h3>
         <a href="#" class="feynman__link"> Подробнее &rarr;</a>
-        <img src="./images/feynman.png" alt="Портрет Фейнмана" class="feynman feynman__portrait">
+        <div style=background-image:  url(images/feynman.png) alt="Feynman's Portrait" class="feynman__portrait">
       </section>
 
       <section class="kaufman">
@@ -132,7 +132,7 @@
             <p class="table__text">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-        <img class="kaufman__triangle" alt="Голубой треугольник" src='./images/kaufman-triangle.svg'>
+        <img class="kaufman__triangle" src='/images/kaufman-triangle.svg'>
 
       </section>
     </main>
@@ -140,8 +140,9 @@
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column_content_copyright flex-container">
-          <img src="./images/logo_place_footer.svg" alt="Логотип Яндекс Практикума" class="logo logo_place_footer footer__column_content_copyright">
-          <div class="footer__author footer__column_content_copyright">&copy2019. Виктор Абанькин
+          <img src="./images/logo_place_footer.svg" alt="Logo Yandex Praktikum" class="logo logo_place_footer footer__column_content_copyright">
+          <div class="footer__author footer__column_content_copyright">
+            <p>&copy2019. Виктор Абанькин</p>
           </div>
         </div>
 
@@ -161,9 +162,9 @@
         <div class="footer__column_content_social flex-container">
           <h5 class="footer__column-heading">Соцсети</h5>
           <div class="footer__column-links">
-            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Логотип Фейсбука">Facebook</a>
-            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Логотип ВКонтакте">ВКонтакте</a>
-            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Логотип Инстаграма">Instagram</a>
+            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Logo Facebook">Facebook</a>
+            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Logo VK">ВКонтакте</a>
+            <a href="#" class="footer__column-link"><img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Logo Instagram">Instagram</a>
             
             
           </div>
@@ -178,7 +179,44 @@
 
     </footer>
   </div>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 </html>
 
 
