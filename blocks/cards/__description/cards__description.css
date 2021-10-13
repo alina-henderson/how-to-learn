@@ -1,0 +1,13 @@
+.cards__description  {
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: top;
+    line-height: 23px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .table__text:last-child {
+    margin-bottom: 0;
+  }

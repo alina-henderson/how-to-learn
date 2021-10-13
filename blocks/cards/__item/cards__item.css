@@ -1,0 +1,7 @@
+.cards__item {
+  background-color: paleturquoise;
+  margin: 0;
+  padding: 0;
+  flex-flow: column;
+  width: 240px;
+}
