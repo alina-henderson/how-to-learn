@@ -1,9 +1,8 @@
 .two-columns__paragraph {
     margin: 0;
     margin-bottom: 30px;
-    border: 1px solid rgb(255, 0, 21);
   }
 
   .two-columns__paragraph:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
