@@ -1,0 +1,14 @@
+.resources__logo {
+    width: 270px;
+    height: 38px;
+    display: block;
+    color: white;
+    text-align: center;
+    border: 1px solid cornflowerblue;
+    opacity: 1;
+}
+
+.resources__logo:hover {
+  opacity: 0.5;
+  transition: all 2s;
+  }
