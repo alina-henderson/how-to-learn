@@ -5,7 +5,3 @@
     justify-content: space-between;
     padding-top: 0;
   }
-
-.two-columns__paragraph:first-child {
-  margin-top: 0;
-}

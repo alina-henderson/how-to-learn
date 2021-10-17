@@ -5,7 +5,3 @@
     margin: 0;
     text-align: center;
   }
-
-  .table__text:last-child {
-    margin-bottom: 0;
-  }
